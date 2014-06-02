@@ -33,7 +33,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "jmx4r"                            #(Apache 2.0 license)
   gem.add_runtime_dependency "fog", ["1.20.0"]                 #(MIT license)
   gem.add_runtime_dependency "varnish-rb"                       #(MIT license)
-
+  gem.add_runtime_dependency "s3io"
   if RUBY_PLATFORM == 'java'
     gem.platform = RUBY_PLATFORM
     gem.add_runtime_dependency "geoscript", "0.1.0.pre"           #(MIT license)
