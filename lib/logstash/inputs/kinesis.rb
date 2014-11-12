@@ -43,6 +43,7 @@ class LogStash::Inputs::Kinesis < LogStash::Inputs::Base
       @credential_provider,
       @worker_id
     )
+    @kinesis_config.withKinesisEndpoint("kinesis.#{@region}.amazonaws.com")
 
     @logger.info("Registering kinesis input stream", :stream_name => @stream_name)
 
